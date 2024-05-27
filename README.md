@@ -1,3 +1,1 @@
-# this is First Project at specialization
-
-## 0x00. ES6 Basics project
+# This is alx-backend-javascript repo for Short Specializations
