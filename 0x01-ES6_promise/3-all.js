@@ -1,5 +1,5 @@
 /* eslint-disable import/extensions */
-import { uploadPhoto, createUser } from "./utils";
+import { uploadPhoto, createUser } from './utils';
 
 export default function handleProfileSignup() {
   const upload = uploadPhoto();
@@ -11,6 +11,6 @@ export default function handleProfileSignup() {
       );
     })
     .catch(() => {
-      console.log("Signup system offline");
+      console.log('Signup system offline');
     });
 }
