@@ -1,5 +1,4 @@
-/* eslint-disable import/extensions */
-import { uploadPhoto, createUser } from './utils';
+import {uploadPhoto, createUser} from './utils';
 
 export default async function handleProfileSignup() {
   const upload = uploadPhoto();
