@@ -6,7 +6,22 @@ export default class EVCar extends Car {
     this._range = range;
   }
 
+  get range() {
+    return this._range;
+  }
+
+  set range(range) {
+    if (typeof range !== 'number') {
+      throw TypeError('Range must be a number');
+    }
+    this._range = range;
+  }
+
+  static get [Symbol.species]() {
+    return this;
+  }
+
   cloneCar() {
-    return new Car();
+    return new this.constructor[Symbol.species](this._brand, this._motor, this._color, this._range);
   }
 }
