@@ -22,6 +22,10 @@ export default class Currency {
     }
   }
 
+  get name() {
+    return this._name;
+  }
+
   set name(newName) {
     if (typeof newName === 'string') {
       this._name = newName;
